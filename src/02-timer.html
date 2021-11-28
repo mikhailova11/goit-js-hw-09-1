@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <input type="text" id="datetime-picker" 
+    style="font-size:20px;
+    background-color: rgb(194, 193, 192);
+    padding: 5px 15px;
+    border-radius: 5%;
+    border: none;"
+     />
+    <button type="button" data-start 
+    style="font-size:20px;
+    background-color: rgb(194, 193, 192);
+    padding: 5px 15px;
+    border-radius: 5%;
+    border: none;
+    ">Start</button>
+
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days class="timer__days" style="font-size:30px;">00</span>
+        <span class="label" style="font-size:20px;">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours style="font-size:30px;">00</span>
+        <span class="label" style="font-size:20px;">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes style="font-size:30px;">00</span>
+        <span class="label" style="font-size:20px;">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds style="font-size:30px;">00</span>
+        <span class="label" style="font-size:20px;">Seconds</span>
+      </div>
+    </div>
+    <style>
+      .field {
+      display: grid; 
+      background-color: rgb(194, 193, 192); 
+      color: rgb(49, 31, 2);
+      border-radius: 5%; 
+      padding: 15px 15px;
+      margin-top: 50px;
+      font-size:30px;
+      }
+      .timer{
+      display: grid; 
+      grid-template-columns: 150px 150px 150px 150px;
+      text-align: center;
+      justify-content: center;
+
+      }
+      
+    </style>
+
+    <script src="js/02-timer.js"></script>
+  </body>
+</html>
